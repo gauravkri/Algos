@@ -11,6 +11,8 @@ public class SelectionSort {
         System.out.println(Arrays.toString(sorting(array)));
         int[] array1 = {7,33,20,11,6};
         System.out.println(Arrays.toString(sorting(array1)));
+        int[] array2 = {1,0,2,0,1,3,2,3,1,0,0,1,2,3};
+        System.out.println(Arrays.toString(sorting(array2)));
     }
 
 

@@ -1,0 +1,7 @@
+1. Race condition
+2. thread memory model
+3. daemon thread and main thread and user thread
+4. thread.join()
+5. thread.sleep()
+
+

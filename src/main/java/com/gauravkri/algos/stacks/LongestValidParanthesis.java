@@ -1,0 +1,31 @@
+package com.gauravkri.algos.stacks;
+
+import java.util.Stack;
+
+public class LongestValidParanthesis {
+
+    public static int longestValidParentheses(String S) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-1);
+        int ans = 0;
+        for (int i = 0; i < S.length(); i++) {
+            System.out.println(i);
+            System.out.println(stack);
+            if (S.charAt(i) == '(') stack.push(i);
+            else {
+                stack.pop();
+                if (stack.isEmpty()) stack.push(i);
+                else ans = Math.max(ans, i - stack.peek());
+            }
+            System.out.println("ans"+ans);
+        }
+        return ans;
+    }
+
+
+
+
+    public static void main(String[] args) {
+        System.out.println(longestValidParentheses("(((()())"));
+    }
+}
